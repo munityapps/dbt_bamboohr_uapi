@@ -25,7 +25,7 @@ SELECT
     "{{ var("table_prefix") }}_employees_directory_stream".mobilephone as phone_number,
     NULL as language,
     "{{ var("table_prefix") }}_employees_directory_stream".division as legal_entity_name,
-    NULL as manager_email,
+    "{{ var("table_prefix") }}_employees_directory_stream".supervisorEmail as manager_email,
     "{{ var("table_prefix") }}_employees_directory_stream".jobtitle as job_title,
     "{{ var("table_prefix") }}_employees_directory_stream".division as team,
     "{{ var("table_prefix") }}_employees_directory_stream".location as country,
@@ -33,8 +33,8 @@ SELECT
     NULL as contract_end_date,
     "{{ var("table_prefix") }}_employees_directory_stream".pronouns as gender,
     "{{ var("table_prefix") }}_employees_directory_stream".division as business_unit,
-    NULL as employee_number,
-    NULL as contract_type,
+    "{{ var("table_prefix") }}_employees_directory_stream".employeeNumber as employee_number,
+    "{{ var("table_prefix") }}_employees_directory_stream".employmentHistoryStatus as contract_type,
     NULL as socio_professional_category,
     NULL as state
 FROM "{{ var("table_prefix") }}_employees_directory_stream"
