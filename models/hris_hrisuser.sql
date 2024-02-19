@@ -30,7 +30,7 @@ SELECT
     "{{ var("table_prefix") }}_custom_reports_stream".division as team,
     "{{ var("table_prefix") }}_custom_reports_stream".country as country,
     "{{ var("table_prefix") }}_custom_reports_stream".hireDate as contract_start_date,
-    "{{ var("table_prefix") }}_custom_reports_stream".terminationdate as contract_start_date,
+    "{{ var("table_prefix") }}_custom_reports_stream".terminationdate as contract_end_date,
     "{{ var("table_prefix") }}_custom_reports_stream".gender as gender,
     "{{ var("table_prefix") }}_custom_reports_stream".division as business_unit,
     "{{ var("table_prefix") }}_custom_reports_stream".employeenumber as employee_number,
