@@ -20,7 +20,6 @@ SELECT
     '{{ var("timestamp") }}' as sync_timestamp,
     "{{ var("table_prefix") }}_custom_reports_stream".workemail as email,
     "{{ var("table_prefix") }}_custom_reports_stream".firstname as firstname,
-    NULL as birth_date,
     "{{ var("table_prefix") }}_custom_reports_stream".dateofbirth as birth_date,
     "{{ var("table_prefix") }}_custom_reports_stream".lastname as lastname,
     "{{ var("table_prefix") }}_custom_reports_stream".mobilephone as phone_number,
