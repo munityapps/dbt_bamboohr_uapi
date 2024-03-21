@@ -36,7 +36,7 @@ SELECT
     "{{ var("table_prefix") }}_custom_reports_stream".employeenumber as employee_number,
     "{{ var("table_prefix") }}_custom_reports_stream".employmenthistorystatus as contract_type,
     "{{ var("table_prefix") }}_custom_reports_stream".department as socio_professional_category,
-    "{{ var("table_prefix") }}_custom_reports_stream".state as state
+    NULL as state
 FROM "{{ var("table_prefix") }}_custom_reports_stream"
 LEFT JOIN _airbyte_raw_{{ var("table_prefix") }}_custom_reports_stream
     ON "{{ var("table_prefix") }}_custom_reports_stream"._airbyte_ab_id = "_airbyte_raw_{{ var("table_prefix") }}_custom_reports_stream"._airbyte_ab_id
